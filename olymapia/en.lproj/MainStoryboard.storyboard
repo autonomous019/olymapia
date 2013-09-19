@@ -1,23 +1,101 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Olymapia View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="olymapiaViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4US-jO-QAD"/>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4US-jO-QAD" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="6O9-1L-fFk"/>
+                            <constraint firstItem="4US-jO-QAD" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="Ha5-xg-xj4"/>
+                            <constraint firstItem="4US-jO-QAD" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="KlV-eD-NCe"/>
+                            <constraint firstItem="4US-jO-QAD" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="oMo-mw-UU1"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <segue destination="Rk7-IY-GNT" kind="modal" identifier="infoDetailViewController" modalTransitionStyle="crossDissolve" id="dvQ-zJ-TUD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="gaB-9x-iPH">
+            <objects>
+                <viewController id="Rk7-IY-GNT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7WV-2k-gj0">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="infoField" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUT-bW-ys9">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" link="YES" staticText="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="548" id="he3-PN-JoP"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                            </textView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tjJ-lp-spu">
+                                <items>
+                                    <navigationItem title="Attraction Info" id="ytP-QU-uxy">
+                                        <barButtonItem key="backBarButtonItem" title="Back" id="DSe-0S-rf2"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="qRZ-Fo-EMp">
+                                            <connections>
+                                                <segue destination="j9t-w8-UlO" kind="unwind" unwindAction="done:" id="Vf8-Y9-N9R"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tjJ-lp-spu" firstAttribute="trailing" secondItem="7WV-2k-gj0" secondAttribute="trailing" type="default" id="62u-zP-Xho"/>
+                            <constraint firstItem="tjJ-lp-spu" firstAttribute="leading" secondItem="7WV-2k-gj0" secondAttribute="leading" type="default" id="BYc-hI-OrJ"/>
+                            <constraint firstItem="TUT-bW-ys9" firstAttribute="trailing" secondItem="7WV-2k-gj0" secondAttribute="trailing" type="default" id="EMe-nL-Jvz"/>
+                            <constraint firstItem="TUT-bW-ys9" firstAttribute="leading" secondItem="7WV-2k-gj0" secondAttribute="leading" type="default" id="W1f-cp-9lO"/>
+                            <constraint firstItem="tjJ-lp-spu" firstAttribute="top" secondItem="7WV-2k-gj0" secondAttribute="top" type="default" id="efA-0a-34p"/>
+                            <constraint firstItem="tjJ-lp-spu" firstAttribute="bottom" secondItem="TUT-bW-ys9" secondAttribute="top" type="default" id="kF6-5r-nUG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="arK-wf-3Jb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OLB-gp-gGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="j9t-w8-UlO" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="457" y="-52"/>
+        </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="UIStoryboardSegue" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIStoryboardSegue.h"/>
+        </class>
+        <class className="olymapiaViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/olymapiaViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="done:" candidateClass="UIStoryboardSegue"/>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

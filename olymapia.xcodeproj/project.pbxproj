@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A827DB2617E9236900C9807E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A827DB2517E9236900C9807E /* Icon.png */; };
+		A827DB2817E9240400C9807E /* icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = A827DB2717E9240400C9807E /* icon-114.png */; };
+		A879C1AC17EB6AFD0032410E /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = A879C1AB17EB6AFD0032410E /* info.png */; };
+		A879C1AF17EB85660032410E /* infoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A879C1AE17EB85660032410E /* infoDetailViewController.m */; };
+		A879C1B217EB9C630032410E /* olymapiaDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A879C1B117EB9C630032410E /* olymapiaDataModel.m */; };
 		A8E65D3A17E7DDD10010CF16 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E65D3917E7DDD10010CF16 /* UIKit.framework */; };
 		A8E65D3C17E7DDD10010CF16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E65D3B17E7DDD10010CF16 /* Foundation.framework */; };
 		A8E65D3E17E7DDD10010CF16 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E65D3D17E7DDD10010CF16 /* CoreGraphics.framework */; };
@@ -18,9 +23,19 @@
 		A8E65D5017E7DDD10010CF16 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A8E65D4F17E7DDD10010CF16 /* Default-568h@2x.png */; };
 		A8E65D5317E7DDD10010CF16 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E65D5117E7DDD10010CF16 /* MainStoryboard.storyboard */; };
 		A8E65D5617E7DDD10010CF16 /* olymapiaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E65D5517E7DDD10010CF16 /* olymapiaViewController.m */; };
+		A8E65D5D17E7DDE10010CF16 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E65D5C17E7DDE10010CF16 /* CoreLocation.framework */; };
+		A8E65D5F17E7DDE80010CF16 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E65D5E17E7DDE80010CF16 /* MapKit.framework */; };
+		A8E65D6217E7E0DC0010CF16 /* olymapiaMyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E65D6117E7E0DC0010CF16 /* olymapiaMyAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A827DB2517E9236900C9807E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		A827DB2717E9240400C9807E /* icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-114.png"; sourceTree = "<group>"; };
+		A879C1AB17EB6AFD0032410E /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = info.png; path = ../../info.png; sourceTree = "<group>"; };
+		A879C1AD17EB85660032410E /* infoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = infoDetailViewController.h; sourceTree = "<group>"; };
+		A879C1AE17EB85660032410E /* infoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = infoDetailViewController.m; sourceTree = "<group>"; };
+		A879C1B017EB9C630032410E /* olymapiaDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = olymapiaDataModel.h; sourceTree = "<group>"; };
+		A879C1B117EB9C630032410E /* olymapiaDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = olymapiaDataModel.m; sourceTree = "<group>"; };
 		A8E65D3617E7DDD10010CF16 /* olymapia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = olymapia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8E65D3917E7DDD10010CF16 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A8E65D3B17E7DDD10010CF16 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +52,10 @@
 		A8E65D5217E7DDD10010CF16 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		A8E65D5417E7DDD10010CF16 /* olymapiaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = olymapiaViewController.h; sourceTree = "<group>"; };
 		A8E65D5517E7DDD10010CF16 /* olymapiaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = olymapiaViewController.m; sourceTree = "<group>"; };
+		A8E65D5C17E7DDE10010CF16 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A8E65D5E17E7DDE80010CF16 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A8E65D6017E7E0DC0010CF16 /* olymapiaMyAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = olymapiaMyAnnotation.h; sourceTree = "<group>"; };
+		A8E65D6117E7E0DC0010CF16 /* olymapiaMyAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = olymapiaMyAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8E65D5F17E7DDE80010CF16 /* MapKit.framework in Frameworks */,
+				A8E65D5D17E7DDE10010CF16 /* CoreLocation.framework in Frameworks */,
 				A8E65D3A17E7DDD10010CF16 /* UIKit.framework in Frameworks */,
 				A8E65D3C17E7DDD10010CF16 /* Foundation.framework in Frameworks */,
 				A8E65D3E17E7DDD10010CF16 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +77,11 @@
 		A8E65D2D17E7DDD10010CF16 = {
 			isa = PBXGroup;
 			children = (
+				A879C1AB17EB6AFD0032410E /* info.png */,
+				A827DB2717E9240400C9807E /* icon-114.png */,
+				A827DB2517E9236900C9807E /* Icon.png */,
+				A8E65D5E17E7DDE80010CF16 /* MapKit.framework */,
+				A8E65D5C17E7DDE10010CF16 /* CoreLocation.framework */,
 				A8E65D3F17E7DDD10010CF16 /* olymapia */,
 				A8E65D3817E7DDD10010CF16 /* Frameworks */,
 				A8E65D3717E7DDD10010CF16 /* Products */,
@@ -84,10 +110,16 @@
 			isa = PBXGroup;
 			children = (
 				A8E65D4817E7DDD10010CF16 /* olymapiaAppDelegate.h */,
+				A879C1AD17EB85660032410E /* infoDetailViewController.h */,
+				A879C1AE17EB85660032410E /* infoDetailViewController.m */,
 				A8E65D4917E7DDD10010CF16 /* olymapiaAppDelegate.m */,
 				A8E65D5117E7DDD10010CF16 /* MainStoryboard.storyboard */,
 				A8E65D5417E7DDD10010CF16 /* olymapiaViewController.h */,
+				A879C1B017EB9C630032410E /* olymapiaDataModel.h */,
+				A879C1B117EB9C630032410E /* olymapiaDataModel.m */,
 				A8E65D5517E7DDD10010CF16 /* olymapiaViewController.m */,
+				A8E65D6017E7E0DC0010CF16 /* olymapiaMyAnnotation.h */,
+				A8E65D6117E7E0DC0010CF16 /* olymapiaMyAnnotation.m */,
 				A8E65D4017E7DDD10010CF16 /* Supporting Files */,
 			);
 			path = olymapia;
@@ -164,6 +196,9 @@
 				A8E65D4E17E7DDD10010CF16 /* Default@2x.png in Resources */,
 				A8E65D5017E7DDD10010CF16 /* Default-568h@2x.png in Resources */,
 				A8E65D5317E7DDD10010CF16 /* MainStoryboard.storyboard in Resources */,
+				A827DB2617E9236900C9807E /* Icon.png in Resources */,
+				A827DB2817E9240400C9807E /* icon-114.png in Resources */,
+				A879C1AC17EB6AFD0032410E /* info.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +212,9 @@
 				A8E65D4617E7DDD10010CF16 /* main.m in Sources */,
 				A8E65D4A17E7DDD10010CF16 /* olymapiaAppDelegate.m in Sources */,
 				A8E65D5617E7DDD10010CF16 /* olymapiaViewController.m in Sources */,
+				A8E65D6217E7E0DC0010CF16 /* olymapiaMyAnnotation.m in Sources */,
+				A879C1AF17EB85660032410E /* infoDetailViewController.m in Sources */,
+				A879C1B217EB9C630032410E /* olymapiaDataModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +337,7 @@
 				A8E65D5B17E7DDD10010CF16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
