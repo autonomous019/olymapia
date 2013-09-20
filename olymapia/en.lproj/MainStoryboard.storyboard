@@ -37,15 +37,15 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="infoField" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUT-bW-ys9">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="attractionDescriptionLabel" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUT-bW-ys9">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" none="YES" link="YES" staticText="YES"/>
+                                    <accessibilityTraits key="traits" none="YES" staticText="YES"/>
                                 </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="548" id="he3-PN-JoP"/>
+                                    <constraint firstAttribute="height" constant="280" id="d5F-L6-DEx"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
@@ -62,15 +62,68 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" restorationIdentifier="attractionImageLabel" translatesAutoresizingMaskIntoConstraints="NO" id="SdQ-KX-McF">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="dUc-pM-Zsu"/>
+                                    <constraint firstAttribute="height" constant="128" id="eJ4-7X-Owm"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="attractionAddressLabel" translatesAutoresizingMaskIntoConstraints="NO" id="W29-d3-59N">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" staticText="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="0Y9-Rp-ubz"/>
+                                    <constraint firstAttribute="width" constant="280" id="Jh7-9s-nEY"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="attractionNameLabel" translatesAutoresizingMaskIntoConstraints="NO" id="rj9-K8-CdD">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" staticText="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="12V-v9-shH"/>
+                                    <constraint firstAttribute="height" constant="28" id="N1C-zl-ZFr"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="attractionLinkLabel" translatesAutoresizingMaskIntoConstraints="NO" id="pEQ-Wo-996">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" link="YES" staticText="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="291" id="KGg-P6-xdt"/>
+                                    <constraint firstAttribute="height" constant="47" id="kdO-wS-Ank"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="pEQ-Wo-996" firstAttribute="leading" secondItem="W29-d3-59N" secondAttribute="leading" type="default" id="41J-ak-diX"/>
+                            <constraint firstAttribute="bottom" secondItem="pEQ-Wo-996" secondAttribute="bottom" constant="10" id="4VZ-Am-RL1"/>
                             <constraint firstItem="tjJ-lp-spu" firstAttribute="trailing" secondItem="7WV-2k-gj0" secondAttribute="trailing" type="default" id="62u-zP-Xho"/>
                             <constraint firstItem="tjJ-lp-spu" firstAttribute="leading" secondItem="7WV-2k-gj0" secondAttribute="leading" type="default" id="BYc-hI-OrJ"/>
                             <constraint firstItem="TUT-bW-ys9" firstAttribute="trailing" secondItem="7WV-2k-gj0" secondAttribute="trailing" type="default" id="EMe-nL-Jvz"/>
+                            <constraint firstItem="TUT-bW-ys9" firstAttribute="top" secondItem="7WV-2k-gj0" secondAttribute="top" constant="218" id="Ggw-vh-0Nq"/>
+                            <constraint firstAttribute="bottom" secondItem="W29-d3-59N" secondAttribute="bottom" constant="53" id="TRk-Zs-o0G"/>
                             <constraint firstItem="TUT-bW-ys9" firstAttribute="leading" secondItem="7WV-2k-gj0" secondAttribute="leading" type="default" id="W1f-cp-9lO"/>
+                            <constraint firstItem="SdQ-KX-McF" firstAttribute="leading" secondItem="rj9-K8-CdD" secondAttribute="leading" type="default" id="ah4-E5-88s"/>
                             <constraint firstItem="tjJ-lp-spu" firstAttribute="top" secondItem="7WV-2k-gj0" secondAttribute="top" type="default" id="efA-0a-34p"/>
-                            <constraint firstItem="tjJ-lp-spu" firstAttribute="bottom" secondItem="TUT-bW-ys9" secondAttribute="top" type="default" id="kF6-5r-nUG"/>
+                            <constraint firstItem="pEQ-Wo-996" firstAttribute="centerX" secondItem="SdQ-KX-McF" secondAttribute="centerX" type="default" id="lQl-jg-msI"/>
+                            <constraint firstItem="SdQ-KX-McF" firstAttribute="top" secondItem="7WV-2k-gj0" secondAttribute="top" constant="94" id="n8z-64-shQ"/>
+                            <constraint firstAttribute="trailing" secondItem="pEQ-Wo-996" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="yUo-US-2ao"/>
+                            <constraint firstItem="rj9-K8-CdD" firstAttribute="top" secondItem="7WV-2k-gj0" secondAttribute="top" constant="52" id="zsF-sq-nvx"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="arK-wf-3Jb"/>
@@ -81,21 +134,6 @@
             <point key="canvasLocation" x="457" y="-52"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="UIStoryboardSegue" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIStoryboardSegue.h"/>
-        </class>
-        <class className="olymapiaViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/olymapiaViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="done:" candidateClass="UIStoryboardSegue"/>
-                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

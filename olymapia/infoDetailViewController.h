@@ -7,7 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "infoDetailViewController.h"
+@class olymapiaDataModel;
 
 @interface infoDetailViewController : NSObject
+
+@property (strong, nonatomic) olymapiaDataModel *info;
+@property (weak, nonatomic) IBOutlet UITextView *attractionNameLabel;
+@property (weak, nonatomic) IBOutlet UITextView *attractionDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UITextView *attractionAddressLabel;
+@property (weak, nonatomic) IBOutlet UITextView *attractionLinkLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *attractionImageLabel;
+
 
 @end
