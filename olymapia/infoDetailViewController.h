@@ -6,11 +6,11 @@
 //  Copyright (c) 2013 michael mccarron. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "infoDetailViewController.h"
+#import <UIKit/UIKit.h>
+
 @class olymapiaDataModel;
 
-@interface infoDetailViewController : NSObject
+@interface infoDetailViewController : UIViewController
 
 @property (strong, nonatomic) olymapiaDataModel *info;
 @property (weak, nonatomic) IBOutlet UITextView *attractionNameLabel;

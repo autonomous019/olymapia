@@ -116,18 +116,18 @@
 			isa = PBXGroup;
 			children = (
 				A8E65D4817E7DDD10010CF16 /* olymapiaAppDelegate.h */,
-				A879C1AD17EB85660032410E /* infoDetailViewController.h */,
-				A879C1AE17EB85660032410E /* infoDetailViewController.m */,
 				A8E65D4917E7DDD10010CF16 /* olymapiaAppDelegate.m */,
-				A8E65D5117E7DDD10010CF16 /* MainStoryboard.storyboard */,
 				A8E65D5417E7DDD10010CF16 /* olymapiaViewController.h */,
 				A8E65D5517E7DDD10010CF16 /* olymapiaViewController.m */,
+				A879C1AD17EB85660032410E /* infoDetailViewController.h */,
+				A879C1AE17EB85660032410E /* infoDetailViewController.m */,
 				A879C1B017EB9C630032410E /* olymapiaDataModel.h */,
 				A879C1B117EB9C630032410E /* olymapiaDataModel.m */,
 				A879C1B317EBE61B0032410E /* infoDataController.h */,
 				A879C1B417EBE61B0032410E /* infoDataController.m */,
 				A8E65D6017E7E0DC0010CF16 /* olymapiaMyAnnotation.h */,
 				A8E65D6117E7E0DC0010CF16 /* olymapiaMyAnnotation.m */,
+				A8E65D5117E7DDD10010CF16 /* MainStoryboard.storyboard */,
 				A8E65D4017E7DDD10010CF16 /* Supporting Files */,
 			);
 			path = olymapia;

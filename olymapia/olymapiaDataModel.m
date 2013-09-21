@@ -9,7 +9,22 @@
 #import "olymapiaDataModel.h"
 
 @implementation olymapiaDataModel
--(id) initWithName:(NSString *)attractionName attractionDescription:(NSString *)attractionDescription attractionAddress:(NSString *)attractionAddress attractionImage:(NSString *)attractionImage attractionLink:(NSString *)attractionLink:(NSString *)attractionName attractionDescription:(NSString *)attractionDescription attractionAddress:(NSString *)attractionAddress attractionImage:(NSString *)attractionImage attractionLink:(NSString *)attractionLink
+
+/*
+-(id)initWithName:(NSString *)name location:(NSString *)location date:(NSDate *)date
+{
+    self = [super init];
+    if (self) {
+        _name = name;
+        _location = location;
+        _date = date;
+        return self;
+    }
+    
+*/
+-(id)initWithName:(NSString *)attractionName
+                 attractionDescription:(NSString *)attractionDescription attractionAddress:(NSString *)attractionAddress attractionImage:(NSString *)attractionImage attractionLink:(NSString *)attractionLink
+
 {
     self = [super init];
     if(self) {
@@ -18,8 +33,12 @@
         _attractionAddress = attractionAddress;
         _attractionImage = attractionImage;
         _attractionLink = attractionLink;
+        return self;
     }
     return nil;
-    
 }
+
+    
+
+
 @end

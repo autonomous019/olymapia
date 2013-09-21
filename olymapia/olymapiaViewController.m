@@ -7,8 +7,12 @@
 //
 
 #import "olymapiaViewController.h"
-#import "olymapiaMyAnnotation.h"
 #import "infoDetailViewController.h"
+#import "olymapiaMyAnnotation.h"
+#import "olymapiaDataModel.h"
+#import "infoDataController.h"
+
+//#import "olymapiaDataModel.h"
 
 
 #define METERS_PER_MILE 1609.344
@@ -18,6 +22,32 @@
 @end
 
 @implementation olymapiaViewController
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+  
+    if ([[segue identifier] isEqualToString:@"infoDetailViewController"]) {
+
+        infoDetailViewController *detailViewController = [segue destinationViewController];
+        
+  
+       
+        
+    }
+    
+    
+}
+
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    self.dataController = [[infoDataController alloc] init];
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
 - (void)viewDidLoad
 {
@@ -74,11 +104,7 @@
     MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 0.5*METERS_PER_MILE, 0.5*METERS_PER_MILE);
     [self.mapView setRegion:viewRegion animated:YES];
 }
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 - (IBAction)done:(UIStoryboardSegue *)segue
 {
@@ -133,7 +159,11 @@
     if (control == view.leftCalloutAccessoryView) {
         //handle left control tap...
         NSLog(@"%@",view.annotation.title);
+     
         [self performSegueWithIdentifier:@"infoDetailViewController" sender:self];
+ 
+        
+    
     }
     else
         if (control == view.rightCalloutAccessoryView) {

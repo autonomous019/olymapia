@@ -21,14 +21,19 @@
 
 @implementation infoDataController
 - (void)initializeDefaultDataList {
+    //NSLog(@"%@am i initialized? -- ");
     NSMutableArray *infoList = [[NSMutableArray alloc] init];
     self.masterInfoList = infoList;
     olymapiaDataModel *info;
   
-    info = [[olymapiaDataModel alloc] initWithName:@"blah" attractionDescription:@"some blah description" attractionAddress:@"123 Main St, Olympia, WA 98501"
+    info = [[olymapiaDataModel alloc] initWithName:@"capital building" attractionDescription:@"the state capital building is really cool!" attractionAddress:@"123 Main St, Olympia, WA 98501"
                                    attractionImage:@"capital.png"
                                     attractionLink:@"http://www.wa.gov"  ];
+    //NSLog(@"%@ stuff ", info.attractionName);
+    
+
     [self addInfoWithInfo:info];
+    
     
 }
 - (void)setMasterInfoList:(NSMutableArray *)newList {
@@ -51,6 +56,7 @@
 }
 - (void)addInfoWithInfo:(olymapiaDataModel *)info {
     [self.masterInfoList addObject:info];
+    
 }
 
 

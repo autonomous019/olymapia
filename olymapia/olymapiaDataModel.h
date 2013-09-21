@@ -10,11 +10,11 @@
 
 @interface olymapiaDataModel : NSObject
 
-    @property (nonatomic, copy) NSString *attractionName;
-    @property (nonatomic, copy) NSString *attractionDescription;
-    @property (nonatomic, copy) NSString *attractionAddress;
-    @property (nonatomic, copy) NSString *attractionImage;
-    @property (nonatomic, copy) NSString *attractionLink;
+    @property (nonatomic, weak) NSString *attractionName;
+    @property (nonatomic, weak) NSString *attractionDescription;
+    @property (nonatomic, weak) NSString *attractionAddress;
+    @property (nonatomic, weak) NSString *attractionImage;
+    @property (nonatomic, weak) NSString *attractionLink;
 
 -(id)initWithName:(NSString *)attractionName attractionDescription:(NSString *)attractionDescription
 attractionAddress:(NSString *)attractionAddress

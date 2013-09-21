@@ -10,9 +10,10 @@
 #import <MapKit/MapKit.h>
 
 
+@class infoDataController;
 
 @interface olymapiaViewController : UIViewController <MKMapViewDelegate>
-
+@property (strong, nonatomic) infoDataController *dataController;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 - (IBAction)done:(UIStoryboardSegue *)segue;
 
