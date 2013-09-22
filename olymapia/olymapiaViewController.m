@@ -12,30 +12,18 @@
 #import "olymapiaDataModel.h"
 #import "infoDataController.h"
 
-//#import "olymapiaDataModel.h"
+
 
 
 #define METERS_PER_MILE 1609.344
-
+/*
 @interface olymapiaViewController ()
 
 @end
+*/
 
 @implementation olymapiaViewController
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-  
-    if ([[segue identifier] isEqualToString:@"infoDetailViewController"]) {
-
-        infoDetailViewController *detailViewController = [segue destinationViewController];
-        
-  
-       
-        
-    }
-    
-    
-}
 
 - (void)awakeFromNib
 {
@@ -139,31 +127,19 @@
     [infoButton setBackgroundImage:[UIImage imageNamed:@"info.png"] forState:UIControlStateNormal];
     
     annotationView.leftCalloutAccessoryView = infoButton;
-    //NSLog(@"%@",_view.annotationView.title);
-    
-    //NSString *image = @"capital.png";
-    
 
-    /*
-    UIImageView *leftIconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:image]];
-    annotationView.leftCalloutAccessoryView = leftIconView;
-    */
     return annotationView;
 }
 
 
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
 {
-    //NSLog(@"%@",view.annotation.title);
-    //NSLog(@"%@",view.annotation.subtitle);
+
     if (control == view.leftCalloutAccessoryView) {
         //handle left control tap...
-        NSLog(@"%@",view.annotation.title);
-     
+       
         [self performSegueWithIdentifier:@"infoDetailViewController" sender:self];
  
-        
-    
     }
     else
         if (control == view.rightCalloutAccessoryView) {
@@ -176,6 +152,24 @@
         }
     
 
+}
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([[segue identifier] isEqualToString:@"infoDetailViewController"]) {
+        
+        infoDetailViewController *detailViewController = [segue destinationViewController];
+        //NSLog(@"%@",detailViewController.info.attractionName);
+        detailViewController.info = [self.dataController objectInListAtIndex:0];
+        /*
+        olymapiaDataModel *info;
+        info = [[olymapiaDataModel alloc] initWithName:@"blah test" attractionDescription:@"test" attractionAddress:@"123 Main St" attractionImage:@"capital.png" attractionLink:@"http://some.com" ];
+        detailViewController.info = info;
+        */
+    }
+    
+    
 }
 
 @end

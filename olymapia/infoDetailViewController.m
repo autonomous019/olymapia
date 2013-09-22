@@ -9,6 +9,7 @@
 #import "infoDetailViewController.h"
 #import "olymapiaDataModel.h"
 
+
 @interface infoDetailViewController ()
 - (void)configureView;
 @end
@@ -31,18 +32,13 @@
 - (void)configureView
 {
     NSLog(@"detail configure view process");
-       NSLog(@"%@get-- ",self.attractionNameLabel.text);
+
     // Update the user interface for the detail item.
     olymapiaDataModel *theInfo = self.info;
+    
     NSLog(@"%@name-- ",theInfo.attractionName);
-    NSLog(@"%@xxx-- ",self.info.attractionName);
-    /*
-     _attractionName = attractionName;
-     _attractionDescription = attractionDescription;
-     _attractionAddress = attractionAddress;
-     _attractionImage = attractionImage;
-     _attractionLink = attractionLink;
-     */
+
+
  
     if (theInfo) {
         NSLog(@"The code runs through here!");

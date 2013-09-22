@@ -29,7 +29,7 @@
     info = [[olymapiaDataModel alloc] initWithName:@"capital building" attractionDescription:@"the state capital building is really cool!" attractionAddress:@"123 Main St, Olympia, WA 98501"
                                    attractionImage:@"capital.png"
                                     attractionLink:@"http://www.wa.gov"  ];
-    //NSLog(@"%@ stuff ", info.attractionName);
+    NSLog(@"%@ object property", info.attractionName);
     
 
     [self addInfoWithInfo:info];
@@ -49,9 +49,13 @@
     return nil;
 }
 - (NSUInteger)countOfList {
+    NSString *s = [NSString stringWithFormat:@"This is a %d test", [self.masterInfoList count]];
+    NSLog(@"%@ object count", s);
     return [self.masterInfoList count];
+    
 }
 - (olymapiaDataModel *)objectInListAtIndex:(NSUInteger)theIndex {
+    [self countOfList];
     return [self.masterInfoList objectAtIndex:theIndex];
 }
 - (void)addInfoWithInfo:(olymapiaDataModel *)info {
