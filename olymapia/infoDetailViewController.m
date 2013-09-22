@@ -31,12 +31,12 @@
 
 - (void)configureView
 {
-    NSLog(@"detail configure view process");
+
 
     // Update the user interface for the detail item.
     olymapiaDataModel *theInfo = self.info;
     
-    NSLog(@"%@name-- ",theInfo.attractionName);
+    NSLog(@"%@ name-- ",theInfo.attractionName);
 
 
  

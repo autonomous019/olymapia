@@ -125,7 +125,8 @@
     UIButton *infoButton = [UIButton buttonWithType:UIButtonTypeCustom];
     infoButton.frame = CGRectMake(0, 0, 30, 30);
     [infoButton setBackgroundImage:[UIImage imageNamed:@"info.png"] forState:UIControlStateNormal];
-    
+    //self.attractionMode = annotation.title;
+    //NSLog(@"%@ attractionMode", self.attractionMode);
     annotationView.leftCalloutAccessoryView = infoButton;
 
     return annotationView;
@@ -137,7 +138,8 @@
 
     if (control == view.leftCalloutAccessoryView) {
         //handle left control tap...
-       
+        self.attractionMode = view.annotation.title;
+        NSLog(@"%@ attractionMode", self.attractionMode);
         [self performSegueWithIdentifier:@"infoDetailViewController" sender:self];
  
     }
@@ -160,8 +162,36 @@
     if ([[segue identifier] isEqualToString:@"infoDetailViewController"]) {
         
         infoDetailViewController *detailViewController = [segue destinationViewController];
-        //NSLog(@"%@",detailViewController.info.attractionName);
-        detailViewController.info = [self.dataController objectInListAtIndex:0];
+
+        if ([self.attractionMode isEqualToString:@"Capital"])
+        {
+            detailViewController.info = [self.dataController objectInListAtIndex:0];
+            
+        }
+        
+        else if ([self.attractionMode isEqualToString:@"Artesian Well"])
+        {
+
+            detailViewController.info = [self.dataController objectInListAtIndex:1];
+            
+        }
+        
+        else if ([self.attractionMode isEqualToString:@"Westside Tavern"])
+        {
+  
+            detailViewController.info = [self.dataController objectInListAtIndex:2];
+            
+        }
+        
+        else if ([self.attractionMode isEqualToString:@"Hands on Children's Museum"])
+        {
+     
+            detailViewController.info = [self.dataController objectInListAtIndex:3];
+            
+        }
+
+ 
+        
         /*
         olymapiaDataModel *info;
         info = [[olymapiaDataModel alloc] initWithName:@"blah test" attractionDescription:@"test" attractionAddress:@"123 Main St" attractionImage:@"capital.png" attractionLink:@"http://some.com" ];
