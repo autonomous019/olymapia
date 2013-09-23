@@ -35,19 +35,30 @@
 
     // Update the user interface for the detail item.
     olymapiaDataModel *theInfo = self.info;
-    
-    NSLog(@"%@ name-- ",theInfo.attractionName);
-
-
  
     if (theInfo) {
-        NSLog(@"The code runs through here!");
-        self.attractionNameLabel.text = theInfo.attractionName;
-        self.attractionDescriptionLabel.text = theInfo.attractionDescription;
-        self.attractionAddressLabel.text = theInfo.attractionAddress;
-        //self.attractionImageLabel.image = theInfo.attractionImage;
-        self.attractionLinkLabel.text = theInfo.attractionLink;
+        //NSLog(@"%@ desc", theInfo.attractionDescription);
         
+        self.attractionNameLabel.text = theInfo.attractionName;
+        self.attractionNameLabel.editable = NO;
+        
+        self.attractionDescriptionLabel.text = theInfo.attractionDescription;
+        self.attractionDescriptionLabel.editable = NO;
+        
+        self.attractionAddressLabel.text = theInfo.attractionAddress;
+        self.attractionAddressLabel.editable = NO;
+        
+        self.attractionLinkLabel.text = theInfo.attractionLink;
+        self.attractionLinkLabel.editable = NO;
+        self.attractionLinkLabel.dataDetectorTypes = UIDataDetectorTypeLink;
+        
+        /*
+         implementation of images for next update
+         self.attractionImageLabel.image = theInfo.attractionImage;
+         
+         
+         [self.attractionDescriptionLabel loadHTMLString:theInfo.attractionDescription baseURL:nil];
+        */
         
     }
 }

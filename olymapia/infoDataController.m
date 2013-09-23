@@ -10,14 +10,6 @@
 #import "olymapiaDataModel.h"
 
 
-/*
- _attractionName = attractionName;
- _attractionDescription = attractionDescription;
- _attractionAddress = attractionAddress;
- _attractionImage = attractionImage;
- _attractionLink = attractionLink;
- 
- */
 
 @implementation infoDataController
 - (void)initializeDefaultDataList {
@@ -70,8 +62,8 @@
     return nil;
 }
 - (NSUInteger)countOfList {
-    NSString *s = [NSString stringWithFormat:@"This is a %d ", [self.masterInfoList count]];
-    NSLog(@"%@ object count", s);
+    //NSString *s = [NSString stringWithFormat:@"This is a %d ", [self.masterInfoList count]];
+    //NSLog(@"%@ object count", s);
     return [self.masterInfoList count];
     
 }
