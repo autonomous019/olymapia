@@ -76,9 +76,19 @@
     //drink this clean water and you'll always be a part of Olympia -- 415 4th Avenue East, Olympia, WA 98501
     [self.mapView addAnnotation:annotation4];
 
+    CLLocationCoordinate2D coordinate5;
+    coordinate5.latitude = 47.044141;
+    coordinate5.longitude = -122.900058;
+    olymapiaMyAnnotation *annotation5 = [[olymapiaMyAnnotation alloc] initWithCoordinate:coordinate5 title:@"Darby's Cafe" subtitle:@"hipster eats" imageName:@"darby.png" ];
+    [self.mapView addAnnotation:annotation5];
+    //47.044141,-122.900058 darbys
     
-    
-    
+    CLLocationCoordinate2D coordinate6;
+    coordinate6.latitude = 47.069783;
+    coordinate6.longitude = -122.969861;
+    olymapiaMyAnnotation *annotation6 = [[olymapiaMyAnnotation alloc] initWithCoordinate:coordinate6 title:@"The Evergreen State College" subtitle:@"Oly's liberal arts college known for it's eccentrics and academics" imageName:@"evergreen.png" ];
+    [self.mapView addAnnotation:annotation6];
+    //47.069783,-122.969861
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -89,7 +99,7 @@
     zoomLocation.latitude = 47.0354558;
     zoomLocation.longitude= -122.9037991;
     // 2
-    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 0.5*METERS_PER_MILE, 0.5*METERS_PER_MILE);
+    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 5.0*METERS_PER_MILE, 5.0*METERS_PER_MILE);
     [self.mapView setRegion:viewRegion animated:YES];
 }
 
@@ -189,6 +199,21 @@
             detailViewController.info = [self.dataController objectInListAtIndex:3];
             
         }
+        
+        else if ([self.attractionMode isEqualToString:@"Darby's Cafe"])
+        {
+            
+            detailViewController.info = [self.dataController objectInListAtIndex:4];
+            
+        }
+        
+        else if ([self.attractionMode isEqualToString:@"The Evergreen State College"])
+        {
+            
+            detailViewController.info = [self.dataController objectInListAtIndex:5];
+            
+        }
+
 
  
         
