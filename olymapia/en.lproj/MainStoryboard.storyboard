@@ -61,15 +61,14 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="attractionAddressLabel" translatesAutoresizingMaskIntoConstraints="NO" id="W29-d3-59N" userLabel="attractionAddressLabel">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="attractionAddressLabel" translatesAutoresizingMaskIntoConstraints="NO" id="W29-d3-59N" userLabel="attractionAddressLabel">
                                 <rect key="frame" x="9" y="460" width="302" height="46"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" staticText="YES" notEnabled="YES"/>
                                 </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="0Y9-Rp-ubz"/>
-                                    <constraint firstAttribute="width" constant="280" id="Jh7-9s-nEY"/>
+                                    <constraint firstAttribute="height" constant="46" id="q9j-j7-Gsd"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -78,15 +77,14 @@
                                     <outlet property="delegate" destination="Rk7-IY-GNT" id="5xE-R7-MLp"/>
                                 </connections>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="attractionNameLabel" translatesAutoresizingMaskIntoConstraints="NO" id="rj9-K8-CdD" userLabel="attractionNameLabel">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="attractionNameLabel" translatesAutoresizingMaskIntoConstraints="NO" id="rj9-K8-CdD" userLabel="attractionNameLabel">
                                 <rect key="frame" x="9" y="51" width="300" height="28"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" staticText="YES" notEnabled="YES"/>
                                 </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="12V-v9-shH"/>
-                                    <constraint firstAttribute="height" constant="28" id="N1C-zl-ZFr"/>
+                                    <constraint firstAttribute="height" constant="28" id="WOR-8a-aFv"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -95,16 +93,12 @@
                                     <outlet property="delegate" destination="Rk7-IY-GNT" id="BDx-bj-Zar"/>
                                 </connections>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="attractionLinkLabel" translatesAutoresizingMaskIntoConstraints="NO" id="pEQ-Wo-996" userLabel="attractionLinkLabel">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="attractionLinkLabel" translatesAutoresizingMaskIntoConstraints="NO" id="pEQ-Wo-996" userLabel="attractionLinkLabel">
                                 <rect key="frame" x="9" y="514" width="302" height="47"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" link="YES" staticText="YES" notEnabled="YES"/>
                                 </accessibility>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="291" id="KGg-P6-xdt"/>
-                                    <constraint firstAttribute="height" constant="47" id="kdO-wS-Ank"/>
-                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -112,13 +106,16 @@
                                     <outlet property="delegate" destination="Rk7-IY-GNT" id="miI-hD-O3L"/>
                                 </connections>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="attractionDescriptionLabel" translatesAutoresizingMaskIntoConstraints="NO" id="52D-wb-z5V" userLabel="attractionDescriptionLabel">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="attractionDescriptionLabel" translatesAutoresizingMaskIntoConstraints="NO" id="52D-wb-z5V" userLabel="attractionDescriptionLabel">
                                 <rect key="frame" x="9" y="87" width="302" height="365"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" staticText="YES" notEnabled="YES"/>
                                 </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="365" id="2By-at-1ww"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -126,14 +123,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="pEQ-Wo-996" firstAttribute="leading" secondItem="W29-d3-59N" secondAttribute="leading" id="41J-ak-diX"/>
-                            <constraint firstAttribute="bottom" secondItem="pEQ-Wo-996" secondAttribute="bottom" constant="10" id="4VZ-Am-RL1"/>
-                            <constraint firstItem="tjJ-lp-spu" firstAttribute="trailing" secondItem="7WV-2k-gj0" secondAttribute="trailing" id="62u-zP-Xho"/>
-                            <constraint firstItem="tjJ-lp-spu" firstAttribute="leading" secondItem="7WV-2k-gj0" secondAttribute="leading" id="BYc-hI-OrJ"/>
-                            <constraint firstAttribute="bottom" secondItem="W29-d3-59N" secondAttribute="bottom" constant="53" id="TRk-Zs-o0G"/>
-                            <constraint firstItem="tjJ-lp-spu" firstAttribute="top" secondItem="7WV-2k-gj0" secondAttribute="top" id="efA-0a-34p"/>
-                            <constraint firstAttribute="trailing" secondItem="pEQ-Wo-996" secondAttribute="trailing" constant="20" symbolic="YES" id="yUo-US-2ao"/>
-                            <constraint firstItem="rj9-K8-CdD" firstAttribute="top" secondItem="7WV-2k-gj0" secondAttribute="top" constant="52" id="zsF-sq-nvx"/>
+                            <constraint firstItem="52D-wb-z5V" firstAttribute="top" secondItem="rj9-K8-CdD" secondAttribute="bottom" constant="8" symbolic="YES" id="337-g6-5xG"/>
+                            <constraint firstItem="52D-wb-z5V" firstAttribute="leading" secondItem="7WV-2k-gj0" secondAttribute="leading" constant="9" id="3f6-Ga-8bH"/>
+                            <constraint firstItem="pEQ-Wo-996" firstAttribute="leading" secondItem="W29-d3-59N" secondAttribute="leading" id="4Am-N2-QWD"/>
+                            <constraint firstItem="W29-d3-59N" firstAttribute="top" secondItem="52D-wb-z5V" secondAttribute="bottom" constant="8" symbolic="YES" id="DbS-OY-DqG"/>
+                            <constraint firstItem="52D-wb-z5V" firstAttribute="centerX" secondItem="7WV-2k-gj0" secondAttribute="centerX" id="Fo8-N4-Fg0"/>
+                            <constraint firstItem="x6v-hG-Ej2" firstAttribute="top" secondItem="pEQ-Wo-996" secondAttribute="bottom" constant="7" id="Z0h-NH-QqV"/>
+                            <constraint firstItem="rj9-K8-CdD" firstAttribute="leading" secondItem="52D-wb-z5V" secondAttribute="leading" id="cIf-oo-Shw"/>
+                            <constraint firstAttribute="trailing" secondItem="rj9-K8-CdD" secondAttribute="trailing" constant="11" id="dhY-g4-0DR"/>
+                            <constraint firstItem="tjJ-lp-spu" firstAttribute="top" secondItem="7WV-2k-gj0" secondAttribute="top" id="gmI-Ik-O4S"/>
+                            <constraint firstItem="tjJ-lp-spu" firstAttribute="centerX" secondItem="W29-d3-59N" secondAttribute="centerX" id="iXr-VX-xrd"/>
+                            <constraint firstItem="W29-d3-59N" firstAttribute="leading" secondItem="52D-wb-z5V" secondAttribute="leading" id="j8a-kn-YVQ"/>
+                            <constraint firstItem="tjJ-lp-spu" firstAttribute="leading" secondItem="7WV-2k-gj0" secondAttribute="leading" id="kKq-Ef-wDg"/>
+                            <constraint firstItem="52D-wb-z5V" firstAttribute="top" secondItem="7WV-2k-gj0" secondAttribute="top" constant="87" id="kvk-RM-dbY"/>
+                            <constraint firstItem="tjJ-lp-spu" firstAttribute="centerX" secondItem="52D-wb-z5V" secondAttribute="centerX" id="uUG-wu-hhX"/>
+                            <constraint firstItem="tjJ-lp-spu" firstAttribute="centerX" secondItem="pEQ-Wo-996" secondAttribute="centerX" id="waV-Jo-4hb"/>
+                            <constraint firstItem="pEQ-Wo-996" firstAttribute="top" secondItem="W29-d3-59N" secondAttribute="bottom" constant="8" symbolic="YES" id="xcW-Za-del"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="arK-wf-3Jb"/>

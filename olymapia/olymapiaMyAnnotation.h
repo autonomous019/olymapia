@@ -10,10 +10,10 @@
 #import <MapKit/MapKit.h>
 
 @interface olymapiaMyAnnotation : NSObject <MKAnnotation>
-@property (strong, nonatomic) NSString *title;
-@property (strong, nonatomic) NSString *subtitle;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *subtitle;
 @property (nonatomic,assign) CLLocationCoordinate2D coordinate;
-@property (strong, nonatomic) NSString *imageName;
+@property (nonatomic, weak) NSString *imageName;
 
 -(id) initWithCoordinate:(CLLocationCoordinate2D)coordinate title:(NSString *)title subtitle:(NSString *)subtitle imageName:(NSString *)imageName;
 @end

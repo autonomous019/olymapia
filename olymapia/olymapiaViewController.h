@@ -14,7 +14,7 @@
 
 @interface olymapiaViewController : UIViewController <MKMapViewDelegate>
 @property (strong, nonatomic) infoDataController *dataController;
-@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (strong, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) NSString *attractionMode;
 - (IBAction)done:(UIStoryboardSegue *)segue;
 

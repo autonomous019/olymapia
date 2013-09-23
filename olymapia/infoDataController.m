@@ -53,11 +53,23 @@
                                     attractionLink:@""  ];
     [self addInfoWithInfo:info];
 
-    //47.069783,-122.969861,"2700 Evergreen Pkwy NW  Olympia, WA 98505"
-
+    info = [[olymapiaDataModel alloc] initWithName:@"percival landing" attractionDescription:@"Percival Landing is 3.38 acres and is one of Olympia's three waterfront parks and is located on the east side of Budd Bay on the southern most tip of Puget Sound. This popular park and tourist destination is in the heart of downtown and is a hub for gatherings, social interaction and public celebrations. The Landing includes a 0.9-mile boardwalk extending along the eastern shoreline of West Bay from the Fourth Avenue Bridge to Thurston Avenue." attractionAddress:@"405 Columbia St NW  Olympia, WA 98501"
+                                   attractionImage:@"percival.png"
+                                    attractionLink:@""  ];
+    [self addInfoWithInfo:info];
     
+    info = [[olymapiaDataModel alloc] initWithName:@"shopping mall" attractionDescription:@"Westfield Capital, formerly known as Capital Mall, is a shopping mall owned by the Westfield Group, and is located in Olympia, Washington. Its major anchor stores include Macy's, JCPenney, Bed Bath and Beyond, REI and Best Buy" attractionAddress:@"625 Black Lake Blvd SW  Olympia, WA 98502"
+                                   attractionImage:@"mall.png"
+                                    attractionLink:@""  ];
+    [self addInfoWithInfo:info];
     
+    //47.041137,-122.930106,"625 Black Lake Blvd SW  Olympia, WA 98502",-,
     
+    info = [[olymapiaDataModel alloc] initWithName:@"priest point park" attractionDescription:@"Priest Point Park is a public park located in Olympia, Washington. Established in 1905, it was the city's first waterfront park, providing access to the Budd Inlet of Puget Sound. Source: Wikipedia" attractionAddress:@"2600 East Bay Dr NE, Olympia, WA 98506"
+                                   attractionImage:@"priestpoint.png"
+                                    attractionLink:@""  ];
+    [self addInfoWithInfo:info];
+    //47.06677,-122.895249,"2600 East Bay Dr NE, Olympia, WA 98506",-,
 }
 - (void)setMasterInfoList:(NSMutableArray *)newList {
     if (_masterInfoList != newList) {

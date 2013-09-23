@@ -89,17 +89,37 @@
     olymapiaMyAnnotation *annotation6 = [[olymapiaMyAnnotation alloc] initWithCoordinate:coordinate6 title:@"The Evergreen State College" subtitle:@"Oly's liberal arts college known for it's eccentrics and academics" imageName:@"evergreen.png" ];
     [self.mapView addAnnotation:annotation6];
     //47.069783,-122.969861
+    
+    CLLocationCoordinate2D coordinate7;
+    coordinate7.latitude = 47.047452;
+    coordinate7.longitude = -122.903337;
+    olymapiaMyAnnotation *annotation7 = [[olymapiaMyAnnotation alloc] initWithCoordinate:coordinate7 title:@"Percival Landing" subtitle:@"water front pier & boardwalk" imageName:@"percival.png" ];
+    [self.mapView addAnnotation:annotation7];
+    //47.047452,-122.903337,"405 Columbia St NW  Olympia, WA 98501",-,
+    
+    CLLocationCoordinate2D coordinate8;
+    coordinate8.latitude = 47.041137;
+    coordinate8.longitude = -122.930106;
+    olymapiaMyAnnotation *annotation8 = [[olymapiaMyAnnotation alloc] initWithCoordinate:coordinate8 title:@"Shopping Mall" subtitle:@"Oly's Shopping Mall" imageName:@"mall.png" ];
+    [self.mapView addAnnotation:annotation8];
+    //47.041137,-122.930106,"625 Black Lake Blvd SW  Olympia, WA 98502",-,
+    
+    CLLocationCoordinate2D coordinate9;
+    coordinate9.latitude = 47.06677;
+    coordinate9.longitude = -122.895249;
+    olymapiaMyAnnotation *annotation9 = [[olymapiaMyAnnotation alloc] initWithCoordinate:coordinate9 title:@"Priest Point Park" subtitle:@"Woodland picnic park" imageName:@"priestpoint.png" ];
+    [self.mapView addAnnotation:annotation9];
+    //47.06677,-122.895249,"2600 East Bay Dr NE, Olympia, WA 98506",-,
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    //1
-    //47.0425° N, 122.8931° W
+
     CLLocationCoordinate2D zoomLocation;
-    zoomLocation.latitude = 47.0354558;
-    zoomLocation.longitude= -122.9037991;
-    // 2
-    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 5.0*METERS_PER_MILE, 5.0*METERS_PER_MILE);
+    zoomLocation.latitude = 47.047452;
+    zoomLocation.longitude= -122.903337;
+
+    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 3.0*METERS_PER_MILE, 3.0*METERS_PER_MILE);
     [self.mapView setRegion:viewRegion animated:YES];
 }
 
@@ -149,7 +169,7 @@
     if (control == view.leftCalloutAccessoryView) {
         //handle left control tap...
         self.attractionMode = view.annotation.title;
-        NSLog(@"%@ attractionMode", self.attractionMode);
+        //NSLog(@"%@ attractionMode", self.attractionMode);
         [self performSegueWithIdentifier:@"infoDetailViewController" sender:self];
  
     }
@@ -213,11 +233,32 @@
             detailViewController.info = [self.dataController objectInListAtIndex:5];
             
         }
+        
+        else if ([self.attractionMode isEqualToString:@"Percival Landing"])
+        {
+            
+            detailViewController.info = [self.dataController objectInListAtIndex:6];
+            
+        }
 
+        else if ([self.attractionMode isEqualToString:@"Shopping Mall"])
+        {
+            
+            detailViewController.info = [self.dataController objectInListAtIndex:7];
+            
+        }
+        
+        else if ([self.attractionMode isEqualToString:@"Priest Point Park"])
+        {
+            
+            detailViewController.info = [self.dataController objectInListAtIndex:8];
+            
+        }
 
  
         
         /*
+         logic for when user addition of their own attractions is implemented
         olymapiaDataModel *info;
         info = [[olymapiaDataModel alloc] initWithName:@"blah test" attractionDescription:@"test" attractionAddress:@"123 Main St" attractionImage:@"capital.png" attractionLink:@"http://some.com" ];
         detailViewController.info = info;
