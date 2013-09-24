@@ -19,6 +19,8 @@
 		A89DF55C17F129D30086688B /* Icon-Small-58.png in Resources */ = {isa = PBXBuildFile; fileRef = A89DF55817F129D30086688B /* Icon-Small-58.png */; };
 		A89DF55D17F129D30086688B /* Icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = A89DF55917F129D30086688B /* Icon-114.png */; };
 		A89DF55F17F12D020086688B /* Icon-512.png in Resources */ = {isa = PBXBuildFile; fileRef = A89DF55E17F12D020086688B /* Icon-512.png */; };
+		A89DF56217F1307F0086688B /* Icon-Small-80png.png in Resources */ = {isa = PBXBuildFile; fileRef = A89DF56017F1307F0086688B /* Icon-Small-80png.png */; };
+		A89DF56317F1307F0086688B /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = A89DF56117F1307F0086688B /* Icon-120.png */; };
 		A8E65D3A17E7DDD10010CF16 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E65D3917E7DDD10010CF16 /* UIKit.framework */; };
 		A8E65D3C17E7DDD10010CF16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E65D3B17E7DDD10010CF16 /* Foundation.framework */; };
 		A8E65D3E17E7DDD10010CF16 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E65D3D17E7DDD10010CF16 /* CoreGraphics.framework */; };
@@ -51,6 +53,8 @@
 		A89DF55817F129D30086688B /* Icon-Small-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-58.png"; path = "../../Icon-Small-58.png"; sourceTree = "<group>"; };
 		A89DF55917F129D30086688B /* Icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-114.png"; path = "../../Icon-114.png"; sourceTree = "<group>"; };
 		A89DF55E17F12D020086688B /* Icon-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-512.png"; path = "../Icon-512.png"; sourceTree = "<group>"; };
+		A89DF56017F1307F0086688B /* Icon-Small-80png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-80png.png"; path = "../../Icon-Small-80png.png"; sourceTree = "<group>"; };
+		A89DF56117F1307F0086688B /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-120.png"; path = "../../Icon-120.png"; sourceTree = "<group>"; };
 		A8E65D3617E7DDD10010CF16 /* olymapia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = olymapia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8E65D3917E7DDD10010CF16 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A8E65D3B17E7DDD10010CF16 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -92,6 +96,8 @@
 		A8E65D2D17E7DDD10010CF16 = {
 			isa = PBXGroup;
 			children = (
+				A89DF56017F1307F0086688B /* Icon-Small-80png.png */,
+				A89DF56117F1307F0086688B /* Icon-120.png */,
 				A89DF55E17F12D020086688B /* Icon-512.png */,
 				A879C1AB17EB6AFD0032410E /* info.png */,
 				A89DF55617F129D30086688B /* Icon-Small.png */,
@@ -191,6 +197,11 @@
 				CLASSPREFIX = olymapia;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "michael mccarron";
+				TargetAttributes = {
+					A8E65D3517E7DDD10010CF16 = {
+						DevelopmentTeam = 94Q2MAA449;
+					};
+				};
 			};
 			buildConfigurationList = A8E65D3117E7DDD10010CF16 /* Build configuration list for PBXProject "olymapia" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -216,11 +227,13 @@
 			files = (
 				A8E65D4417E7DDD10010CF16 /* InfoPlist.strings in Resources */,
 				A8E65D4C17E7DDD10010CF16 /* Default.png in Resources */,
+				A89DF56217F1307F0086688B /* Icon-Small-80png.png in Resources */,
 				A89DF55D17F129D30086688B /* Icon-114.png in Resources */,
 				A8E65D4E17E7DDD10010CF16 /* Default@2x.png in Resources */,
 				A8E65D5017E7DDD10010CF16 /* Default-568h@2x.png in Resources */,
 				A8E65D5317E7DDD10010CF16 /* MainStoryboard.storyboard in Resources */,
 				A827DB2617E9236900C9807E /* Icon.png in Resources */,
+				A89DF56317F1307F0086688B /* Icon-120.png in Resources */,
 				A827DB2817E9240400C9807E /* icon-114.png in Resources */,
 				A879C1AC17EB6AFD0032410E /* info.png in Resources */,
 				A89DF55B17F129D30086688B /* Icon.png in Resources */,
@@ -329,10 +342,13 @@
 		A8E65D5A17E7DDD10010CF16 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "olymapia/olymapia-Prefix.pch";
 				INFOPLIST_FILE = "olymapia/olymapia-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -340,10 +356,13 @@
 		A8E65D5B17E7DDD10010CF16 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "olymapia/olymapia-Prefix.pch";
 				INFOPLIST_FILE = "olymapia/olymapia-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
